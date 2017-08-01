@@ -1,3 +1,88 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .container {
-  width: 960px; 
+  width: 960px;
+}
+
+/* Header */
+header {
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Helvectica", sans-serif;
+  position: fixed;
+  z-index: 5;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.title img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-top:  1rem;
+  padding-bottom: 1rem;
+}
+
+nav li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: url("../images/glasses-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+height: 30rem;
+width: 100%;
+}
+
+.jumbotron > .container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.announcement {
+  text-transform: uppercase;
+  background-color: white;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.announcement h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
