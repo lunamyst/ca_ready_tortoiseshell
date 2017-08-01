@@ -4,14 +4,14 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 
 }
 
-.container {
-  width: 960px;
+.header-container {
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Header */
@@ -24,6 +24,7 @@ header {
   font-family: "Helvectica", sans-serif;
   position: fixed;
   z-index: 5;
+  width: 960px;
 }
 
 .title {
@@ -62,27 +63,65 @@ background-size: cover;
 
 height: 30rem;
 width: 100%;
+display: flex;
+justify-content: center;
 }
 
 .jumbotron > .container {
-  margin-top: 3rem;
   display: flex;
   justify-content: flex-end;
+  width: 960px;
+  margin-left: 2rem;
 }
-.announcement {
+
+.announcement h1 {
   text-transform: uppercase;
   background-color: white;
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-  margin-top: 10rem;
+  /* To account for 3rem fixed header +10rem space in spec */
+  margin-top: 13rem;
   text-align: center;
-}
-
-.announcement h1 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+/* Main body */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pictures {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+.picture-item {
+  width: 5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.picture-item img {
+  width: 3.5rem;
+
+}
+
+.picture-item p {
+  text-align: center;
 }
