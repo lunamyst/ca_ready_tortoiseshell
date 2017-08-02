@@ -9,7 +9,17 @@ body {
 }
 
 .header-container {
-   display: flex;
+  background: url("../images/glasses-bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+height: 30rem;
+width: 100%;
+display: flex;
+justify-content: center;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -53,21 +63,7 @@ nav li {
   padding-right: 2rem;
 }
 
-/* Jumbotron */
-.jumbotron {
-  background: url("../images/glasses-bg.png") no-repeat center center;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-
-height: 30rem;
-width: 100%;
-display: flex;
-justify-content: center;
-}
-
-.jumbotron > .container {
+.container {
   display: flex;
   justify-content: flex-end;
   width: 960px;
@@ -94,7 +90,8 @@ justify-content: center;
 section {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pictures {
@@ -103,6 +100,7 @@ section {
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-family: "Helvetica", sans-serif;
 
 }
 
@@ -112,7 +110,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -124,4 +122,59 @@ section {
 
 .picture-item p {
   text-align: center;
+}
+
+/* Mission Statement and Contact Info Section */
+.mission-and-contact {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  font-family: "Helvetica", sans-serif;
+  margin-bottom: 5rem;
+
+}
+
+.mission-and-contact h2 {
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  width: 50%;
+}
+
+.mission, .contact {
+  width: 35%
+}
+
+.mission {
+  margin-right: 2.5%;
+}
+
+.contact {
+  margin-left: 2.5%;
+}
+
+/* Footer */
+footer {
+  background-color: azure;
+display: flex;
+justify-content: center; 
+}
+
+.footer-title {
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  width: 960px;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
