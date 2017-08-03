@@ -176,6 +176,7 @@ footer img {
 
 /* Media query for tablets */
 @media only screen and (max-width: 1024px) {
+
   .header-container {
     height: 22rem;
   }
@@ -192,9 +193,43 @@ footer img {
 
   .announcement h1 {
     font-size: 1.33rem;
+    margin-top: 8rem;
+    margin-right: 2rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #desktop-header {
+    display: none;
+  }
+
+  .header-container {
+    height: 17rem;
+    background-position: 20% 20%;
+  }
+
+  .announcement h1 {
+    margin-top: 12rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .announcement {
+    width: 100%;
+  }
+
+header, .container, .pictures, .mission-and-contact, .footer-title {
+  width: 100%; 
+}
+}
+
+@media only screen and (min-width:471px) {
+  #mobile-header {
+    display: none;
   }
 }
