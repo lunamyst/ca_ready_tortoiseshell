@@ -263,6 +263,7 @@ header, .container, .pictures, .mission-and-contact, .footer-title {
 
 .mission-and-contact h2 {
   width: 100%;
+  padding-left: 0; 
 }
 
 .mission-and-contact p {
